@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.heading-1 {
+    font-weight: 600;
+    color: #00BFA6;
+    opacity: 0;
+    transform: translate(0, -80px);
+}
+
+.heading-2 {
+    font-weight: 600;
+    color: #00BFA6;
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 1s;
+}
+
+.show-h {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.p-1 {
+    font-weight: 300;
+    font-size: 11pt;
+    text-align: left;
+    width: 400px;
+    opacity: 0;
+    transform: translate(-40px, 0);
+    transition: 1s;
+}
+
+.show-p {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.img-book {
+    width: 80%;
+    opacity: 0;
+    transform: translate(100px, 0);
+    transition: 1s;
+}
+
+.showing {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.regis {
+    color: black;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 10pt;
+    text-transform: uppercase;
+
+    background: linear-gradient(to right, #00BFA6 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right top;
+    transition: all 0.2s ease-out;
+}
+
+.regis:hover {
+    background-position: left top;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #00BFA6;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0, -50px);
+}
+
+.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.card:hover {
+    transform: rotate(3deg) scale(1.1);
+    transition: 0.4s;
+}
+
+.img-featur {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heading-card {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #00BFA6;
+}
+
+.p-card {
+    text-align: center;
+    font-size: 10pt;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #00BFA6;
+    margin-top: 60px;
+}
+
+.contact {
+    opacity: 0;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.show-contact {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.img-contact {
+    width: 150px;
+    display: block;
+}
+
+.h-contact {
+    font-weight: 600;
+    font-size: 15pt;
+    text-align: left;
+    color: black;
+}
+
+.h-contact:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.p-contact {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 11pt;
+    color: #AAA;
+}
+
+.heading-contact {
+    text-align: center;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.img-wrap {
+    text-align: center;
+}
+
+.img-media {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.img-media:hover {
+    transform: rotate(360deg);
+}
+
+.btn-card {
+    padding: 10px 10px 10px 10px;
+    background: white;
+    border: 1px solid #00BFA6;
+    color: #00BFA6;
+    border-radius: 20px;
+    font-size: 9pt;
+    text-transform: uppercase;
+    margin-left: 38%;
+}
+
+.btn-card:hover {
+    text-decoration: none;
+    color: white;
+    background: #00BFA6;
+    border: 1px solid #00BFA6;
+}
+
+.top {
+    padding: 10px 20px 5px 20px;
+    background: #00BFA6;
+    font-size: 20pt;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    bottom: 0rem;
+    right: 1rem;
+    transition: .5s;
+}
+
+.top:hover {
+    color: white;
+    transform: translate(0, -5px);
+}
+
+.dev {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 425px) {
+    .contact {
+        margin-left: 25%;
+    }
+
+    .img-book {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .heading-1, .heading-2, .p-1 {
+        text-align: center;
+    }
+
+    .regis {
+        margin-left: 30%;
+    }
+
+    .fitur {
+        display: flex;
+        align-content: center;
+    }
+}
